@@ -10,14 +10,14 @@ public class Acchimuite {
 		Direction cpuDirection = cpu.point();
 		System.out.println("ほいっ！");
 		System.out.println(String.format("", userDirection, cpuDirection)); // TODO: フォーマットを実装
-		if (userDirection.equals(cpuDirection)) {
+		if (!userDirection.equals(cpuDirection)) {
+			return 0;
+		}
+		if (winner instanceof User) {
+			return 1;
+		}else {
 			return -1;
 		}
-
-		if ( /* TODO: 穴埋め */ ) {
-			return 1;
-		}
-		return 0;
 	}
 
 }
