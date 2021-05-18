@@ -13,7 +13,7 @@ public class Acchimuite {
 		if (!userDirection.equals(cpuDirection)) {
 			return 0;
 		}
-		if (winner instanceof User) {
+		if ( /* TODO: 実装 */ ) {
 			return 1;
 		}else {
 			return -1;
